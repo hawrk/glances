@@ -3,19 +3,13 @@ Glances
 
 .. image:: _static/screenshot-wide.png
 
-Glances is a cross-platform curses-based monitoring tool which aims to
-present a maximum of information in a minimum of space, ideally to fit
-in a classical 80x24 terminal or higher to have additional information.
-It can adapt dynamically the displayed information depending on the
-terminal size. It can also work in client/server mode. Remote monitoring
-could be done via terminal or web interface.
+Glances是一个基于curses的跨平台监控工具，旨在在最小的空间上展示最多的信息，较为理想地适用于经典的80x24或更高的终端，以拥有额外信息。根据终端大小，它可以动态地适应展示信息。它还可以工作在client/server模式下。通过终端和web界面，可以进行远程监控。
 
-Glances is written in Python and uses the `psutil`_ library to get
-information from your system.
+Glances使用Python写的，使用`psutil`_ 库来获取你的系统的信息。
 
 .. _psutil: https://github.com/giampaolo/psutil
 
-Table of Contents
+目录
 =================
 
 .. toctree::
