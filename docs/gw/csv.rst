@@ -3,13 +3,13 @@
 CSV
 ===
 
-It's possible to export stats to a CSV file.
+有可能将统计信息导出到一个CSV文件中。
 
 .. code-block:: console
 
     $ glances --export-csv /tmp/glances.csv
 
-CSV file description:
+CSV文件描述：
 
 - Stats description (first line)
 - Stats (other lines)

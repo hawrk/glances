@@ -11,15 +11,9 @@ SYNOPSIS
 描述
 -----------
 
-**glances** is a cross-platform curses-based monitoring tool which aims
-to present a maximum of information in a minimum of space, ideally to
-fit in a classical 80x24 terminal or higher to have additional
-information. It can adapt dynamically the displayed information
-depending on the terminal size. It can also work in client/server mode.
-Remote monitoring could be done via terminal or web interface.
+**glances**是一个基于curses的跨平台监控工具，旨在在最小的空间上展示最多的信息，较为理想地适用于经典的80x24或更高的终端，以拥有额外信息。根据终端大小，它可以动态地适应展示信息。它还可以工作在client/server模式下。通过终端和web界面，可以进行远程监控。
 
-**glances** is written in Python and uses the *psutil* library to get
-information from your system.
+**glances**使用Python写的，使用*psutil*库来获取你的系统的信息。
 
 选项
 -------
@@ -33,16 +27,15 @@ information from your system.
 
     $ glances
 
-Monitor local machine with the web interface (Web UI):
+使用web界面监控本地机器 (Web UI):
 
     $ glances -w
 
-Monitor local machine and export stats to a CSV file:
+监控本地机器并将统计信息导出到一个CSV文件中：
 
     $ glances --export-csv
 
-Monitor local machine and export stats to a InfluxDB server with 5s
-refresh time:
+监控本地机器并以5s的刷新时间将统计信息导出到一个InfluxDB服务器：
 
     $ glances -t 5 --export-influxdb
 

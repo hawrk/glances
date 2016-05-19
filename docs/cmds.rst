@@ -228,11 +228,11 @@
 
 .. option:: --hide-kernel-threads
 
-    hide kernel threads in process list
+    隐藏进程列表中的内核线程
 
 .. option:: --tree
 
-    display processes as a tree
+    树形展示进程列表
 
 .. option:: -b, --byte
 
@@ -244,11 +244,11 @@
 
 .. option:: --diskio-iops
 
-    show I/O per second in the DiskIO plugin
+    在DiskIO插件中显示每秒的I/O
 
 .. option:: --fahrenheit
 
-    display temperature in Fahrenheit (default is Celsius)
+    以华氏温标显示温度 (默认是摄氏度)
 
 .. option:: -1, --percpu
 
@@ -260,7 +260,7 @@
 
 .. option:: --theme-white
 
-    optimize display colors for white background
+    为白色背景优化显示颜色
 
 交互式命令
 --------------------
@@ -268,27 +268,24 @@
 The following commands (key pressed) are supported while in Glances:
 
 ``ENTER``
-    Set the process filter
+    设置进程过滤器
 
-    **Note**: on OS X, please use ``CTRL-H`` to delete
-    filter.
+    **注意**: 在OS X上，请使用``CTRL-H``来删除过滤器。
 
-    Filter is a regular expression pattern:
+    过滤器是一个正则表达式模式：
 
-    - ``gnome``: matches all processes starting with the ``gnome``
-      string
+    - ``gnome``: 匹配所有以``gnome``字符串开头的进程
 
-    - ``.*gnome.*``: matches all processes containing the ``gnome``
-      string
+    - ``.*gnome.*``: 匹配所有包含``gnome``字符串的进程
 
 ``a``
-    Sort process list automatically
+    自动对进程列表排序
 
-    - If CPU ``>70%``, sort processes by CPU usage
+    - 如果CPU ``>70%``，则根据CPU使用排列进程
 
-    - If MEM ``>70%``, sort processes by MEM usage
+    - 如果MEM ``>70%``，则根据MEM使用排列进程
 
-    - If CPU iowait ``>60%``, sort processes by I/O read and write
+    - 如果CPU iowait ``>60%``，则根据I/O read 和 write排列进程
 
 ``b``
     Switch between bit/s or Byte/s for network I/O
