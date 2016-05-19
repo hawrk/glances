@@ -1,11 +1,11 @@
 .. _aoa:
 
-Anatomy Of The Application
+应用剖析
 ==========================
 
-This document is meant to give an overview of the Glances interface.
+本文档意在提供Glances接口的概述。
 
-Legend:
+说明：
 
 =========== ============
 ``GREEN``   ``OK``
@@ -14,8 +14,8 @@ Legend:
 ``RED``     ``CRITICAL``
 =========== ============
 
-.. note::
-    Only stats with colored background will be shown in the alert view.
+.. 注意::
+    只有带彩色背景的统计信息会在警告视图中显示。
 
 .. toctree::
    :maxdepth: 2

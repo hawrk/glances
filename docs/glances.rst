@@ -8,7 +8,7 @@ SYNOPSIS
 
 **glances** [OPTIONS]
 
-DESCRIPTION
+描述
 -----------
 
 **glances** is a cross-platform curses-based monitoring tool which aims
@@ -21,15 +21,15 @@ Remote monitoring could be done via terminal or web interface.
 **glances** is written in Python and uses the *psutil* library to get
 information from your system.
 
-OPTIONS
+选项
 -------
 
 .. include:: cmds.rst
 
-EXAMPLES
+例子
 --------
 
-Monitor local machine (standalone mode):
+监控本地机器 (standalone模式):
 
     $ glances
 
@@ -46,23 +46,23 @@ refresh time:
 
     $ glances -t 5 --export-influxdb
 
-Start a Glances server (server mode):
+启动一个Glances服务器 (server模式):
 
     $ glances -s
 
-Connect Glances to a Glances server (client mode):
+连接Glances到一个Glances服务器 (client模式):
 
     $ glances -c <ip_server>
 
-Connect to a Glances server and export stats to a StatsD server:
+连接到一个Glances服务器并导出统计信息到一个StatsD服务器上：
 
     $ glances -c <ip_server> --export-statsd
 
-Start the client browser (browser mode):
+启动client浏览器 (browser模式):
 
     $ glances --browser
 
-AUTHOR
+作者
 ------
 
 Nicolas Hennion aka Nicolargo <contact@nicolargo.com>

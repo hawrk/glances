@@ -1,16 +1,16 @@
 .. _config:
 
-Configuration
+配置
 =============
 
-No configuration file is mandatory to use Glances.
+不是一定要配置文件才能使用Glances的。
 
-Furthermore a configuration file is needed to access more settings.
+此外，要访问更多设置，则需要一个配置文件。
 
-Location
+位置
 --------
 
-You can put the ``glances.conf`` file in the following locations:
+你可以将``glances.conf``文件放在下面的位置上：
 
 =========== ============================================================
 ``Linux``   ~/.config/glances, /etc/glances
@@ -19,28 +19,27 @@ You can put the ``glances.conf`` file in the following locations:
 ``Windows`` %APPDATA%\glances
 =========== ============================================================
 
-On Windows XP, the ``%APPDATA%`` path is:
+在Windows XP上，``%APPDATA%``路径是：
 
 ::
 
     C:\Documents and Settings\<User>\Application Data
 
-Since Windows Vista and newer versions:
+而Windows Vista和更新的版本：
 
 ::
 
     C:\Users\<User>\AppData\Roaming
 
-User-specific options override system-wide options and options given on
-the command line override either.
 
-Syntax
+用户指定的选项覆盖系统范围的选项，而命令行给出的选项覆盖前面两者。
+
+语法
 ------
 
-Glances reads configuration files in the *ini* syntax.
+Glances以*ini*语法读取配置文件。
 
-Each plugin and export module can have a section. Below an example for
-the CPU plugin:
+每个插件和导出模块可以有一个部分。下面是CPU插件的例子：
 
 .. code-block:: ini
 
@@ -58,20 +57,18 @@ the CPU plugin:
     steal_warning=70
     steal_critical=90
 
-Logging
+日志
 -------
 
-Glances logs all of its internal messages to a log file.
+Glances将其所有内部信息记录到一个日志文件中。
 
-``DEBUG`` messages can been logged using the ``-d`` option on the command
-line.
+使用命令行上的``-d``选项，可以记录``DEBUG``信息。
 
-By default, the ``glances.log`` file is under the temporary directory:
+默认情况下，``glances.log``文件位于临时目录下：
 
 ===================== ==================================================
 ``Linux, *BSD, OS X`` /tmp
 ``Windows``           %APPDATA%\\Local\\temp
 ===================== ==================================================
 
-If ``glances.log`` is not writable, a new file will be created and
-returned to the user console.
+假如``glances.log``不可写，那么将会创建一个新的文件，并将其返回给用户控制台。

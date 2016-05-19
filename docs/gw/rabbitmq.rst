@@ -3,9 +3,7 @@
 RabbitMQ
 ========
 
-You can export statistics to an ``RabbitMQ`` server (AMQP Broker). The
-connection should be defined in the Glances configuration file as
-following:
+你可以将统计信息导出到``RabbitMQ``服务器上 (AMQP Broker)。应该像下面这样在Glances配置文件中定义连接：
 
 .. code-block:: ini
 
@@ -16,7 +14,7 @@ following:
     password=glances
     queue=glances_queue
 
-and run Glances with:
+然后这样运行Glances：
 
 .. code-block:: console
 

@@ -1,10 +1,9 @@
 .. _gw:
 
-Gateway To Other Services
+到其他服务的网关
 =========================
 
-Glances can exports stats to a CSV file. Also, it can act as a gateway
-to providing stats to multiple services.
+Glances可以导出统计信息到一个CSV文件中。另外，它可以作为一个网关来提供统计信息到多个服务商。
 
 .. toctree::
    :maxdepth: 2

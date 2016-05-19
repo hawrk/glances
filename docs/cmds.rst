@@ -1,203 +1,202 @@
 .. _cmds:
 
-Command Reference
+命令参考
 =================
 
-Command-Line Options
+命令行选项
 --------------------
 
 .. option:: -h, --help
 
-    show this help message and exit
+    显示帮助信息并退出
 
 .. option:: -V, --version
 
-    show program's version number and exit
+    显示程序的版本号并退出
 
 .. option:: -d, --debug
 
-    enable debug mode
+    启用debug模式
 
 .. option:: -C CONF_FILE, --config CONF_FILE
 
-    path to the configuration file
+    到配置文件的路径
 
 .. option:: -3, --disable-quicklook
 
-    disable quick look module
+    禁用quick look模块
 
 .. option:: -4, --full-quicklook
 
-    disable all but quick look and load
+    禁用all but quick look and load
 
 .. option:: --disable-cpu
 
-    disable CPU module
+    禁用CPU模块
 
 .. option:: --disable-mem
 
-    disable memory module
+    禁用memory模块
 
 .. option:: --disable-swap
 
-    disable swap module
+    禁用swap模块
 
 .. option:: --disable-load
 
-    disable load module
+    禁用load模块
 
 .. option:: --disable-network
 
-    disable network module
+    禁用network模块
 
 .. option:: --disable-ip
 
-    disable IP module
+    禁用IP模块
 
 .. option:: --disable-diskio
 
-    disable disk I/O module
+    禁用disk I/O模块
 
 .. option:: --disable-fs
 
-    disable filesystem module
+    禁用filesystem模块
 
 .. option:: --disable-folder
 
-    disable folder module
+    禁用folder模块
 
 .. option:: --disable-sensors
 
-    disable sensors module
+    禁用sensors模块
 
 .. option:: --disable-hddtemp
 
-    disable HD temperature module
+    禁用HD temperature模块
 
 .. option:: --disable-raid
 
-    disable RAID module
+    禁用RAID模块
 
 .. option:: --disable-docker
 
-    disable Docker module
+    禁用Docker模块
 
 .. option:: -5, --disable-top
 
-    disable top menu (QuickLook, CPU, MEM, SWAP and LOAD)
+    禁用top菜单 (QuickLook, CPU, MEM, SWAP 和 LOAD)
 
 .. option:: -2, --disable-left-sidebar
 
-    disable network, disk I/O, FS and sensors modules (py3sensors lib
-    needed)
+    禁用network, disk I/O, FS和sensors模块 (需要py3sensors库)
 
 .. option:: --disable-process
 
-    disable process module
+    禁用process模块
 
 .. option:: --disable-log
 
-    disable log module
+    禁用log模块
 
 .. option:: --disable-bold
 
-    disable bold mode in the terminal
+    禁用终端bold模式
 
 .. option:: --disable-bg
 
-    disable background colors in the terminal
+    禁用终端背景颜色
 
 .. option:: --enable-process-extended
 
-    enable extended stats on top process
+    启用extended stats on top process
 
 .. option:: --enable-history
 
-    enable the history mode (matplotlib lib needed)
+    启用history模式 (需要matplotlib库)
 
 .. option:: --path-history PATH_HISTORY
 
-    set the export path for graph history
+    为graph history设置导出路径
 
 .. option:: --export-csv EXPORT_CSV
 
-    export stats to a CSV file
+    导出统计信息到一个CSV文件中
 
 .. option:: --export-influxdb
 
-    export stats to an InfluxDB server (influxdb lib needed)
+    导出统计信息到一个InfluxDB服务器上 (需要influxdb库)
 
 .. option:: --export-opentsdb
 
-    export stats to an OpenTSDB server (potsdb lib needed)
+    导出统计信息到一个OpenTSDB服务器上 (需要potsdb库)
 
 .. option:: --export-statsd
 
-    export stats to a StatsD server (statsd lib needed)
+    导出统计信息到一个StatsD服务器上 (需要statsd库)
 
 .. option:: --export-rabbitmq
 
-    export stats to RabbitMQ broker (pika lib needed)
+    导出统计信息到RabbitMQ broker上 (需要pika库)
 
 .. option:: --export-riemann
 
-    export stats to Riemann server (bernhard lib needed)
+    导出统计信息到Riemann服务器上 (需要bernhard库)
 
 .. option:: --export-elasticsearch
 
-    export stats to an Elasticsearch server (elasticsearch lib needed)
+    导出统计信息到Elasticsearch服务器上 (需要elasticsearch库)
 
 .. option:: -c CLIENT, --client CLIENT
 
-    connect to a Glances server by IPv4/IPv6 address or hostname
+    通过IPv4/IPv6地址或者主机名连接到一个Glances服务器
 
 .. option:: -s, --server
 
-    run Glances in server mode
+    以server模式运行Glances
 
 .. option:: --browser
 
-    start the client browser (list of servers)
+    启动客户端浏览器 (服务器列表)
 
 .. option:: --disable-autodiscover
 
-    disable autodiscover feature
+    禁用autodiscover特性
 
 .. option:: -p PORT, --port PORT
 
-    define the client/server TCP port [default: 61209]
+    定义 client/server TCP 端口 [默认：61209]
 
 .. option:: -B BIND_ADDRESS, --bind BIND_ADDRESS
 
-    bind server to the given IPv4/IPv6 address or hostname
+    绑定服务器到给定的IPv4/IPv6地址或主机名
 
 .. option:: --username
 
-    define a client/server username
+    定义client/server 用户名
 
 .. option:: --password
 
-    define a client/server password
+    定义client/server密码
 
 .. option:: --snmp-community SNMP_COMMUNITY
 
-    SNMP community
+    SNMP社区
 
 .. option:: --snmp-port SNMP_PORT
 
-    SNMP port
+    SNMP端口
 
 .. option:: --snmp-version SNMP_VERSION
 
-    SNMP version (1, 2c or 3)
+    SNMP版本 (1, 2c 或者 3)
 
 .. option:: --snmp-user SNMP_USER
 
-    SNMP username (only for SNMPv3)
+    SNMP用户名 (仅用于SNMPv3)
 
 .. option:: --snmp-auth SNMP_AUTH
 
-    SNMP authentication key (only for SNMPv3)
+    SNMP 认证密钥 (仅用于SNMPv3)
 
 .. option:: --snmp-force
 
@@ -263,7 +262,7 @@ Command-Line Options
 
     optimize display colors for white background
 
-Interactive Commands
+交互式命令
 --------------------
 
 The following commands (key pressed) are supported while in Glances:
@@ -298,88 +297,88 @@ The following commands (key pressed) are supported while in Glances:
     View disk I/O counters per second
 
 ``c``
-    Sort processes by CPU usage
+    根据CPU使用排列进程
 
 ``d``
-    Show/hide disk I/O stats
+    显示/隐藏 disk I/O统计信息
 
 ``D``
-    Enable/disable Docker stats
+    启用/禁用Docker 统计信息
 
 ``e``
-    Enable/disable top extended stats
+    启用/禁用top extended统计信息
 
 ``E``
-    Erase current process filter
+    擦除当前进程过滤器
 
 ``f``
-    Show/hide file system and folder monitoring stats
+    显示/隐藏文件系统和文件夹监控统计信息
 
 ``F``
     Switch between file system used and free space
 
 ``g``
-    Generate graphs for current history
+    为当前history生成图表
 
 ``h``
-    Show/hide the help screen
+    显示/隐藏 the help screen
 
 ``i``
-    Sort processes by I/O rate
+    根据I/O比率排列进程
 
 ``I``
-    Show/hide IP module
+    显示/隐藏 IP模块
 
 ``l``
-    Show/hide log messages
+    显示/隐藏 log messages
 
 ``m``
-    Sort processes by MEM usage
+    根据MEM使用排列进程
 
 ``M``
     Reset processes summary min/max
 
 ``n``
-    Show/hide network stats
+    显示/隐藏 network stats
 
 ``p``
-    Sort processes by name
+    根据名称排列进程
 
 ``q|ESC``
-    Quit the current Glances session
+    退出当前Glances会话
 
 ``r``
-    Reset history
+    重置history
 
 ``R``
-    Show/hide RAID plugin
+    显示/隐藏 RAID插件
 
 ``s``
-    Show/hide sensors stats
+    显示/隐藏 sensors统计信息
 
 ``t``
-    Sort process by CPU times (TIME+)
+    根据CPU times (TIME+)排列进程
 
 ``T``
     View network I/O as combination
 
 ``u``
-    Sort processes by USER
+    根据USER排列进程
 
 ``U``
     View cumulative network I/O
 
 ``w``
-    Delete finished warning log messages
+    删除完成的warning日志消息
 
 ``x``
-    Delete finished warning and critical log messages
+    删除完成的warning和critical日志信息
 
 ``z``
-    Show/hide processes stats
+    显示/隐藏 processes统计信息
 
 ``0``
-    Enable/disable Irix/Solaris mode
+    启用/禁用Irix/Solaris模式
 
     Task's CPU usage will be divided by the total number of CPUs
 
@@ -387,25 +386,24 @@ The following commands (key pressed) are supported while in Glances:
     Switch between global CPU and per-CPU stats
 
 ``2``
-    Enable/disable left sidebar
+    启用/禁用left sidebar
 
 ``3``
-    Enable/disable the quick look module
+    启用/禁用the quick look模块
 
 ``4``
-    Enable/disable all but quick look and load module
+    启用/禁用all but quick look and load模块
 
 ``5``
-    Enable/disable top menu (QuickLook, CPU, MEM, SWAP and LOAD)
+    启用/禁用top菜单(QuickLook, CPU, MEM, SWAP和LOAD)
 
 ``/``
     Switch between process command line or command name
 
-In the Glances client browser (accessible through the ``--browser``
-command line argument):
+在Glances客户端浏览器 (通过``--browser``命令行参数可进入):
 
 ``ENTER``
-    Run the selected server
+    运行选择的服务器
 
 ``UP``
     Up in the servers list
@@ -414,4 +412,4 @@ command line argument):
     Down in the servers list
 
 ``q|ESC``
-    Quit Glances
+    退出Glances
